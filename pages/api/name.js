@@ -2,7 +2,7 @@ import OpenAI from "openai";
 export default async function handler(req, res) {
     const {name} = req.body
     const openai = new OpenAI({
-      api_key: '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'
+      api_key: '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'
     });
 
     const textCompletion = await openai.chat.completions.create({

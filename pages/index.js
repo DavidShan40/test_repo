@@ -22,7 +22,7 @@ export default function Home() {
           .then((res) => res.json())
           .then((data) => {
             console.log(data)
-            const {content} = data.message
+            const {content} = data.text.message
             console.log(content)
             setOutput(content)
           })
